@@ -1,0 +1,195 @@
+
+/*=== Public Styles ===*/
+
+html { font-size: 10px; }
+
+body {
+    margin: 0 auto;
+    min-width: 375px;
+}
+
+.title-h1 {
+    font-size: 46px;
+    font-weight: 500;
+    letter-spacing: normal;
+    line-height: normal;
+    color: #2E3C4B;
+}
+
+.title-h4 {
+    font-size: 26px;
+    font-weight: 500;
+    letter-spacing: normal;
+    line-height: normal;
+    color: #2E3C4B;
+}
+
+.title-h5 {
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: normal;
+    line-height: normal;
+    color: #2E3C4B;
+}
+
+.container { box-sizing: content-box; }
+
+.main {
+    padding: 0 1rem;
+    width: 85%;
+    float: right;
+}
+
+.sidebar {
+    width: 15%;
+    float: left;
+    height: 100vh;
+    background-color: #efefef;
+}
+
+
+
+/*=== Estate ===*/
+
+.estate {
+    padding: 5rem 0 6rem;
+}
+
+.estate .estate_title {
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.estate .estate_content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.estate .estateContent_card {
+    margin: 0 2% 2% 0;
+    padding: 1.5rem 1.5rem 2.5rem;
+    width: 32%;
+    border-radius: 5px;
+    background-color: #efefef;
+}
+
+.estate .estateContent_card:nth-child(3n+3) { margin-right: 0; }
+
+.estate .estateContent_card .card_img {
+    margin-bottom: 2rem;
+    height: 250px;
+    background-color: #e0e0e0;
+}
+
+.estate .estateContent_card .card_img img { width: auto; height: 100%;}
+
+.estate .estateContent_card .card_title {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.estate .estateContent_card .cardDesc_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.estate .estateContent_card .cardDesc_block:last-child { margin-bottom: 0; }
+
+.estate .estateContent_card .cardDesc_block .block_prop,
+.estate .estateContent_card .cardDesc_block .block_value {
+    max-width: 50%;
+}
+
+.estate .estateContent_card .cardDesc_block .block_prop {padding-right: 0.5rem; }
+
+.estate .estateContent_card .cardDesc_block .block_value {
+    padding-left: 0.5rem;
+    text-align: right;
+}
+.estate .estateContent_card .cardDesc_block .block_value span {
+    font-size: 13px;
+}
+.estate .estateContent_card .cardDesc_block .block_prop span { font-weight: 600; }
+
+
+
+/*=== Sidebar ===*/
+
+.sidebar {
+    padding: 5rem 1rem 6rem;
+}
+
+.sidebar_title {
+    margin-bottom: 2rem;
+}
+
+.sidebar_list a {
+    display: block;
+    color: inherit;
+    transition: color, 300ms;
+}
+
+.sidebar_list a:hover{ color: #54397E; }
+
+
+
+/*=== Media ===*/
+
+
+@media (max-width: 1199px) {
+
+    /*=== Estate ===*/
+
+    .estate .estateContent_card { width: 48%; }
+
+    .estate .estateContent_card:nth-child(3n+3) { margin-right: 2%; }
+
+    .estate .estateContent_card:nth-child(2n+2) { margin-right: 0; }
+}
+
+
+@media (max-width: 991px) {
+
+    .main {
+        float: none;
+        width: 100%;
+    }
+
+    /*=== Sidebar ===*/
+
+    .sidebar {
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+
+    .sidebar_list a {display: inline-block; }
+}
+
+
+@media (max-width: 767px) {
+
+    /*=== Public styles ===*/
+
+    .title-h1 { font-size: 28px; }
+
+    .title-h4 { font-size: 24px; }
+
+    .title-h5 { font-size: 18px; }
+
+
+    /*=== Estate ===*/
+
+    .estate .estateContent_card {
+        margin: 0 auto 20px;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .estate .estateContent_card:last-child { margin-bottom: 0; }
+    .estate .estateContent_card:nth-child(1n+1) { margin-right: auto; }
+}
